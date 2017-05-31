@@ -6,7 +6,7 @@ COPY ./scripts/tools/ /opt/meteor/tools/
 COPY ./scripts/docker-entrypoint /usr/local/bin/
 
 # Install Meteor
-ENV METEOR_VERSION 1.2.1
+ENV METEOR_VERSION 1.4.4.1
 RUN /opt/meteor/tools/installer
 
 # Expose resources

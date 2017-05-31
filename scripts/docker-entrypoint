@@ -38,9 +38,9 @@ then
     cd ${METEOR_DIR}/..
     if [ -a "${METEOR_SETTINGS_FILE}" ]
     then
-        exec meteor --port ${PORT} --settings ${METEOR_SETTINGS_FILE}
+        exec meteor --port ${PORT} --settings ${METEOR_SETTINGS_FILE} --allow-superuser
     else
-        exec meteor --port ${PORT}
+        exec meteor --port ${PORT} --allow-superuser
     fi
 fi
 
